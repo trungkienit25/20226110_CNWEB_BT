@@ -31,6 +31,38 @@
             <button id="searchBtn">Tìm</button>
         </div>
 
+        <div class="admin-controls">
+            <button id="addProductBtn">Thêm sản phẩm mới</button>
+        </div>
+
+        <section id="addProductForm" class="hidden">
+            <h3>Thêm sản phẩm mới</h3>
+            <form id="newProductFormInternal">
+                <div>
+                    <label for="newName">Tên sản phẩm:</label>
+                    <input type="text" id="newName" required>
+                </div>
+                <div>
+                    <label for="newPrice">Giá:</label>
+                    <input type="number" id="newPrice" required>
+                </div>
+                <div>
+                    <label for="newDesc">Mô tả:</label>
+                    <textarea id="newDesc" rows="3"></textarea>
+                </div>
+                <div>
+                    <label for="newImage">Link hình ảnh:</label>
+                    <input type="text" id="newImage">
+                </div>
+
+                <p id="errorMsg" style="color:red;"></p>
+                
+                <div>
+                    <button type="submit">Thêm</button>
+                    <button type="button" id="cancelBtn">Hủy</button>
+                </div>
+            </form>
+        </section>
         <section id="product-list">
             <h2>Sản phẩm nổi bật</h2>
             <article class="product-item">
@@ -59,40 +91,6 @@
             </article>
         </section>
             
-
-        
-        <div class="admin-controls">
-            <button id="addProductBtn">Thêm sản phẩm mới</button>
-        </div>
-        <section id="addProductForm" class="hidden">
-
-            <h3>Thêm sản phẩm mới</h3>
-            <form id="newProductFormInternal">
-                <div>
-                    <label for="newName">Tên sản phẩm:</label>
-                    <input type="text" id="newName" required>
-                </div>
-                <div>
-                    <label for="newPrice">Giá:</label>
-                    <input type="number" id="newPrice" required>
-                </div>
-                <div>
-                    <label for="newDesc">Mô tả:</label>
-                    <textarea id="newDesc" rows="3"></textarea>
-                </div>
-                <div>
-                    <label for="newImage">Link hình ảnh:</label>
-                    <input type="text" id="newImage">
-                </div>
-
-                <p id="errorMsg" style="color:red;"></p>
-                
-                <div>
-                    <button type="submit">Thêm</button>
-                    <button type="button" id="cancelBtn">Hủy</button>
-                </div>
-            </form>
-        </section>
         <section id="contact-form">
             <h2>Đăng ký nhận tư vấn cấu hình</h2>
             <p>Để lại thông tin, chuyên gia của KienPC sẽ liên hệ với bạn!</p>
