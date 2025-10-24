@@ -1,0 +1,257 @@
+/* ----- Đặt style chung ----- */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c; 
+    color: #f0f0f0;
+}
+
+body > * {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ----- Styling Header ----- */
+header {
+    background-color: #111;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #e60023; 
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #e60023; 
+}
+
+/* ----- Danh sách sản phẩm (Product list layout) ----- */
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    justify-content: flex-start;
+}
+
+#product-list h2 {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+
+.product-item {
+    flex: 0 1 calc((100% - 20px) / 3);
+    
+    background: #2a2a2a; 
+    border: 1px solid #444;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; 
+}
+
+
+.product-item img {
+    max-width: 100%;
+    width: 100%;
+    aspect-ratio: 1 / 1; 
+    object-fit: cover; 
+    border-radius: 4px;
+}
+
+
+.product-item h3 {
+    font-size: 1.25em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #fff; 
+}
+
+.product-item p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    color: #ccc; 
+}
+
+.product-item .price {
+    color: #e60023; 
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: auto; 
+}
+
+/* ----- Form và Footer ----- */
+#contact-form {
+    background: #2a2a2a;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #444;
+}
+
+#contact-form h2 {
+    color: #fff;
+}
+
+form {
+    max-width: 500px;
+    margin: 20px auto 0 auto;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #eee;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+}
+
+form button[type="submit"] {
+    background-color: #e60023;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+form button[type="submit"]:hover {
+    background-color: #4c020d; 
+}
+
+footer {
+    text-align: center;
+    background: #111; 
+    color: #888;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+/* ----- Thiết kế Responsive ----- */
+@media (max-width: 600px) {
+    
+    #product-list {
+        flex-direction: column;
+        justify-content: flex-start; 
+    }
+
+    .product-item {
+        flex: 1 1 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    body > * {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+/* Styling cho các nút điều khiển mới */
+.search-container, .admin-controls {
+    margin-bottom: 20px;
+    background: #2a2a2a;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    display: flex;
+    gap: 10px;
+}
+
+.search-container input[type="text"] {
+    flex: 1; /* Cho ô input chiếm nhiều không gian */
+    padding: 8px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Style cho nút "Thêm sản phẩm" và nút "Tìm" */
+#addProductBtn, #searchBtn {
+    background-color: #e60023;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#addProductBtn:hover, #searchBtn:hover {
+    background-color: #b3001b;
+}

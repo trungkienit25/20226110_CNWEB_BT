@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KienPC - Chuyên gia Build PC Gaming</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>KienPC</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">PC Gaming</a></li>
+                <li><a href="#">Laptop</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introduction">
+            <h2>Build trọn bộ PC, chiến game cực đỉnh!</h2>
+            <p>Chúng tôi chuyên cung cấp các bộ PC cấu hình cao và laptop gaming hàng đầu tại Hà Nội.</p>
+        </section>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Tìm kiếm PC theo tên...">
+            <button id="searchBtn">Tìm</button>
+        </div>
+
+        <section id="product-list">
+            <h2>Sản phẩm nổi bật</h2>
+            <article class="product-item">
+                <img src="https://kenh14cdn.com/203336854389633024/2023/2/2/photo-6-16753224991991619667344.jpg" alt="PC Gaming K01">
+                <h3 class="product-name">PC Gaming "Chiến Binh"</h3>
+                <p>Cấu hình mạnh mẽ với Intel Core i5, RTX 4060, 16GB RAM...</p>
+                <p class="price">Giá: 25.000.000 VNĐ</p>
+            </article>
+            <article class="product-item">
+                <img src="https://kenh14cdn.com/203336854389633024/2023/2/2/photo-5-1675322494986772950569.jpg" alt="PC Đồ Họa K02">
+                <h3 class="product-name">PC Đồ Họa "Sáng Tạo"</h3>
+                <p>Build riêng cho dân thiết kế. Core i7, 32GB RAM...</p>
+                <p class="price">Giá: 35.000.000 VNĐ</p>
+            </article>
+            <article class="product-item">
+                <img src="https://cdn.tgdd.vn/Files/2021/02/21/1329129/toplaptop10_799x447.jpg" alt="Laptop Văn Phòng K03">
+                <h3 class="product-name">Laptop Văn Phòng</h3>
+                <p>Mỏng nhẹ, pin trâu, hiệu năng ổn định...</p>
+                <p class="price">Giá: 18.000.000 VNĐ</p>
+            </article>
+            <article class="product-item">
+                <img src="https://cdn.tgdd.vn/Files/2021/07/29/1371593/laptop-it-1_1280x800-800-resize.jpg" alt="Laptop Sinh viên K04">
+                <h3 class="product-name">Laptop Sinh viên</h3>
+                <p>Đáp ứng các chức năng học tập cơ bản...</p>
+                <p class="price">Giá: 10.000.000 VNĐ</p>
+            </article>
+        </section>
+            
+
+        
+        <div class="admin-controls">
+            <button id="addProductBtn">Thêm sản phẩm mới</button>
+        </div>
+        <section id="addProductForm" class="hidden">
+
+            <h3>Thêm sản phẩm mới</h3>
+            <form id="newProductFormInternal">
+                <div>
+                    <label for="newName">Tên sản phẩm:</label>
+                    <input type="text" id="newName" required>
+                </div>
+                <div>
+                    <label for="newPrice">Giá:</label>
+                    <input type="number" id="newPrice" required>
+                </div>
+                <div>
+                    <label for="newDesc">Mô tả:</label>
+                    <textarea id="newDesc" rows="3"></textarea>
+                </div>
+                <div>
+                    <label for="newImage">Link hình ảnh:</label>
+                    <input type="text" id="newImage">
+                </div>
+
+                <p id="errorMsg" style="color:red;"></p>
+                
+                <div>
+                    <button type="submit">Thêm</button>
+                    <button type="button" id="cancelBtn">Hủy</button>
+                </div>
+            </form>
+        </section>
+        <section id="contact-form">
+            <h2>Đăng ký nhận tư vấn cấu hình</h2>
+            <p>Để lại thông tin, chuyên gia của KienPC sẽ liên hệ với bạn!</p>
+            
+            <form action="#" method="post">
+                <div>
+                    <label for="name">Họ và tên:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Nhu cầu của bạn (Build PC, Nâng cấp, ...):</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Gửi yêu cầu</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 KienPC. Phát triển bởi Kiên Nguyễn.</p>
+        <p>Địa chỉ: CT6 Xa La, Kiến Hưng, Hà Nội.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
