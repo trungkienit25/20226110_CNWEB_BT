@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KienPC - Chuyên gia Build PC Gaming</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>KienPC</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">PC Gaming</a></li>
+                <li><a href="#">Laptop</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introduction">
+            <h2>Build trọn bộ PC, chiến game cực đỉnh!</h2>
+            <p>Chúng tôi chuyên cung cấp các bộ PC cấu hình cao và laptop gaming hàng đầu tại Hà Nội.</p>
+        </section>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Tìm kiếm PC theo tên...">
+            <button id="searchBtn">Tìm</button>
+        </div>
+
+        <div class="admin-controls">
+            <button id="addProductBtn">Thêm sản phẩm mới</button>
+        </div>
+
+        <div class="filter-sort-container">
+            <div class="filter-group">
+                <label for="priceFilter">Lọc theo giá:</label>
+                <select id="priceFilter">
+                    <option value="all">Tất cả</option>
+                    <option value="0-15000000">Dưới 15 triệu</option>
+                    <option value="15000000-30000000">Từ 15 - 30 triệu</option>
+                    <option value="30000000-999999999">Trên 30 triệu</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="sortOrder">Sắp xếp:</label>
+                <select id="sortOrder">
+                    <option value="default">Mặc định</option>
+                    <option value="price-asc">Giá tăng dần</option>
+                    <option value="price-desc">Giá giảm dần</option>
+                </select>
+            </div>
+        </div>
+
+        <section id="addProductForm">
+            <h3>Thêm sản phẩm mới</h3>
+            <form id="newProductFormInternal">
+                <div>
+                    <label for="newName">Tên sản phẩm:</label>
+                    <input type="text" id="newName" required>
+                </div>
+                <div>
+                    <label for="newPrice">Giá (VNĐ):</label>
+                    <input type="number" id="newPrice" required>
+                </div>
+                <div>
+                    <label for="newDesc">Mô tả:</label>
+                    <textarea id="newDesc" rows="3"></textarea>
+                </div>
+                <div>
+                    <label for="newImage">Link hình ảnh:</label>
+                    <input type="text" id="newImage">
+                </div>
+                
+                <p id="errorMsg" style="color:red;"></p>
+                
+                <div>
+                    <button type="submit">Thêm</button>
+                    <button type="button" id="cancelBtn">Hủy</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="product-list">
+            <h2>Sản phẩm nổi bật</h2>
+            </section>
+
+        <section id="contact-form">
+            <h2>Đăng ký nhận tư vấn cấu hình</h2>
+            <p>Để lại thông tin, chuyên gia của KienPC sẽ liên hệ với bạn!</p>
+            
+            <form action="#" method="post">
+                <div>
+                    <label for="name">Họ và tên:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Nhu cầu của bạn (Build PC, Nâng cấp, ...):</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Gửi yêu cầu</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 KienPC. Phát triển bởi Kiên Nguyễn.</p>
+        <p>Địa chỉ: CT6 Xa La, Kiến Hưng, Hà Nội.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

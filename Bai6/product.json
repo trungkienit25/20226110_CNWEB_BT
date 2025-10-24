@@ -1,0 +1,30 @@
+[
+    {
+        "id": "p1",
+        "name": "PC Gaming \"Chiến Binh\"",
+        "price": 25000000,
+        "desc": "Cấu hình mạnh mẽ với Intel Core i5, RTX 4060, 16GB RAM...",
+        "imageUrl": "https://kenh14cdn.com/203336854389633024/2023/2/2/photo-6-16753224991991619667344.jpg"
+    },
+    {
+        "id": "p2",
+        "name": "PC Đồ Họa \"Sáng Tạo\"",
+        "price": 35000000,
+        "desc": "Build riêng cho dân thiết kế. Core i7, 32GB RAM...",
+        "imageUrl": "https://kenh14cdn.com/203336854389633024/2023/2/2/photo-5-1675322494986772950569.jpg"
+    },
+    {
+        "id": "p3",
+        "name": "Laptop Văn Phòng",
+        "price": 18000000,
+        "desc": "Mỏng nhẹ, pin trâu, hiệu năng ổn định...",
+        "imageUrl": "https://cdn.tgdd.vn/Files/2021/02/21/1329129/toplaptop10_799x447.jpg"
+    },
+    {
+        "id": "p4",
+        "name": "Laptop Sinh viên",
+        "price": 10000000,
+        "desc": "Đáp ứng các chức năng học tập cơ bản...",
+        "imageUrl": "https://cdn.tgdd.vn/Files/2021/07/29/1371593/laptop-it-1_1280x800-800-resize.jpg"
+    }
+]
