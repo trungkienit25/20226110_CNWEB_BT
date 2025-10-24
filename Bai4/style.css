@@ -223,6 +223,7 @@ footer p {
 /* Styling cho các nút điều khiển mới */
 .search-container, .admin-controls {
     margin-bottom: 20px;
+    margin-top: 20px;
     background: #2a2a2a;
     padding: 15px;
     border-radius: 8px;
