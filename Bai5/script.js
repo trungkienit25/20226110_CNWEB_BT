@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             initialItems.forEach(item => {
                 const nameElement = item.querySelector('h3');
-                const descElement = item.querySelector('p'); // Lấy <p> đầu tiên
+                const descElement = item.querySelector('p'); 
                 const priceElement = item.querySelector('.price');
                 const imgElement = item.querySelector('img');
 

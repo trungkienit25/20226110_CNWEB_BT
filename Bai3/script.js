@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <p class="price">Giá: ${Number(price).toLocaleString('vi-VN')} VNĐ</p>
         `;
 
-        productListContainer.prepend(newItem);
+        productListContainer.appendChild(newItem);
         newProductForm.reset();
         addProductFormSection.classList.add('hidden');
     });
